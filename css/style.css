@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Noto Sans", sans-serif;
+}
+body {
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	padding: 20px 120px;
+	background: #5d5d5d;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+.logo {
+	font-size: 2rem;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+}
+nav a {
+	font-size: 18px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	margin-left: 30px;
+	/* transition: transform ease-in-out 0.4s; */
+	transition: 0.3s ease-out;
+	display: inline-block;
+}
+nav a:hover {
+	transform: translate(0, -5px);
+	color: #fac62a;
+}
+/* 
+nav a.active {
+	color: white;
+} */
+section {
+	/* overflow: hidden; */
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #cacfd2;
+	/* font-size: 64px;
+	font-weight: 600; */
+}
+div > #heading1 {
+	font-size: 64px;
+}
+section:nth-child(odd) {
+	background-image: linear-gradient(
+		to bottom,
+		#632677,
+		#6d2191,
+		#731aad,
+		#7415cb,
+		#7012eb
+	);
+}
+.flower {
+	opacity: 0;
+	clip-path: polygon(0% 100%, 100% 100%, 100%, 0% 100%);
+}
+.section1-wrapper {
+	display: grid;
+	grid-template-rows: auto;
+}
+.sub-wrap {
+	color: white;
+	display: grid;
+	grid-template-row: auto auto auto;
+}
+.subwrap .subwrap-item {
+	align-items: center;
+	justify-items: center;
+}
+.flipbook-wrap {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.flip-item {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+.subwrap > .subwrap-item > img {
+	height: 1rem;
+}
+h1 {
+	font-size: 40px;
+	margin-bottom: 1rem;
+	clip-path: polygon(0% 100%, 100% 100%, 100%, 0% 100%);
+	margin: 0 auto;
+	opacity: 0;
+	transform: translate(50px);
+	text-align: left;
+}
+
+/* .sub-wrap h1 span.green-heading-bg {
+	display: inline;
+	z-index: -1;
+	background-image: linear-gradient(#a6eb06, #4bedc2);
+	background-position: 0 80%;
+	background-repeat: no-repeat;
+	background-size: 0 40%;
+	margin-left: -0.55rem;
+	margin-right: -0.55rem;
+	padding-left: 0.55rem;
+	padding-right: 0.55rem;
+	transition: background-size 1s 1.5s ease;
+}
+
+.sub-wrap h1 span.green-heading-bg.show {
+	background-size: 100% 40%;
+} */
+footer {
+	background-color: aliceblue;
+	/* display: flex; */
+	justify-content: space-between;
+}
+footer > ul {
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+}
+ul > li {
+	/* text-decoration: none; */
+	padding-right: 1rem;
+}
+.flower > img,
+#flower5 {
+	height: 36px;
+	width: 36px;
+}
