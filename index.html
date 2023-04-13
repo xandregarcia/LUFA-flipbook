@@ -38,6 +38,10 @@
 
     <div id="preloader" style="color: aliceblue">LOADING</div>
     <section class="section sec1" id="home">
+      <video class="video-bg" autoplay muted loop>
+        <source src="./assets/vid/LUFA-trailer.mp4" type="video/mp4" />
+      </video>
+
       <header class="nav">
         <a href="#" class="logo">PGLU</a>
         <nav>
@@ -54,9 +58,9 @@
           <div class="subwrap-item">
             <img src="/assets/flower.png" alt="flower" id="flower2" />
           </div>
-          <div class="container subwrap-item is-animated" id="heading1">
-            <h1 class="main-heading is-animated">
-              <span class="green-heading-bg">LUFA</span>
+          <div class="subwrap-item" id="heading1">
+            <h1 class="">
+              <span class="">TITLE</span>
             </h1>
           </div>
           <div class="subwrap-item">
@@ -76,10 +80,11 @@
     </section>
     <section class="section" id="flipbook">
       <!-- <div id="section2"> -->
-      <div class="flipbook-wrap sec2">
+      <div class="flipbook-wrap sec2" style="width: 50%">
         <div class="flip-item">
-          <div id="canvas">
-            <div id="book-zoom">
+          <div class="subwrap-item flipbook">
+            <div id="canvas">
+              <!-- <div id="book-zoom"> -->
               <div class="sample-docs">
                 <div ignore="1" class="tabs">
                   <div class="left"></div>
@@ -90,35 +95,87 @@
                 <div class="hard p101"></div>
                 <div class="hard p102"></div>
               </div>
-            </div>
-            <div id="slider-bar" class="turnjs-slider">
-              <div id="slider"></div>
+              <!-- </div> -->
+              <div id="slider-bar" class="turnjs-slider">
+                <div id="slider"></div>
+              </div>
+              <span
+                style="
+                  display: flex;
+                  justify-items: center;
+                  justify-items: center;
+                "
+                >This is a caption</span
+              >
             </div>
           </div>
         </div>
-        <!-- <div class="flip-item">
-					<div class="subwrap-item">
-						<span
-							>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum
-							temporibus consequatur aperiam vero quae maiores optio blanditiis
-							ducimus numquam accusamus natus eaque quas, nisi illo nostrum
-							quibusdam porro? Perferendis quibusdam quas libero temporibus
-							perspiciatis deleniti, neque cumque rem fugiat facere.</span
-						>
-					</div>
+        <!-- <div class="subwrap-item">
+					<div></div>
 				</div> -->
+        <!-- <div class="flip-item"></div> -->
       </div>
       <!-- </div> -->
     </section>
+
     <section class="section sec3" id="about">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div id="section3">
-        <h1 class="title">Hello</h1>
+        <!-- <h2 id="contact">CONTACT</h2> -->
+        <div class="content-wrap">
+          <div class="text-col">
+            <h3>Kaprobinsiaan</h3>
+            <ul style="text-align: center">
+              <li><b></b></li>
+              <li>Mayroon ka</li>
+              <li>bang Katanungan?</li>
+              <br />
+              <!-- <p><b>I&apos;d love to hear from you!</b></p> -->
+            </ul>
+          </div>
+
+          <div class="form-col">
+            <div class="col-wrap">
+              <h3>How can I help?</h3>
+              <form>
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Contact number" />
+                <textarea id="messagebox" placeholder="Message"></textarea>
+              </form>
+              <div><button type="submit">Submit</button></div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+      <div id="section3">
         <footer style="color: blanchedalmond">
           <ul>
-            <li><a>asdsad</a></li>
-            <li><a>asdsad</a></li>
+            <li><a>Footer 1</a></li>
+            <li><a>Footer 2</a></li>
           </ul>
         </footer>
+      </div>
+      <div style="position: sticky">
+        <a
+          href="#top"
+          class="top"
+          title="Back to Top"
+          style="font-size: 2rem; z-index: 100; display: inline-block"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M4.08 11.92L12 4l7.92 7.92l-1.42 1.41l-5.5-5.5V22h-2V7.83l-5.5 5.5l-1.42-1.41M12 4h10V2H2v2h10Z"
+            />
+          </svg>
+          Back to Top</a
+        >
       </div>
     </section>
 
