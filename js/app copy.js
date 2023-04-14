@@ -160,7 +160,7 @@ window.onscroll = () => {
 //     width: "100%",
 //   });
 
-// // Hide the preloader when everything is loaded
+// Hide the preloader when everything is loaded
 // window.addEventListener("load", function () {
 //   pagetl.pause();
 //   gsap.to(".preloader", {
@@ -173,7 +173,7 @@ window.onscroll = () => {
 //   });
 // });
 
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
+// var loader = document.getElementsByClassName("preloader");
+// window.addEventListener("load", function () {
+//   loader.style.display = "none";
+// });
