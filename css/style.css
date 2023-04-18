@@ -10,6 +10,8 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  /* position: relative; */
+  /* overflow: auto; */
 }
 header {
   position: fixed;
@@ -53,6 +55,10 @@ nav a:hover {
 nav a.active {
 	color: white;
 } */
+.body-wrap {
+  position: absolute;
+  width: 100%;
+}
 .section {
   overflow: hidden;
   position: relative;
@@ -65,9 +71,11 @@ nav a.active {
     rgba(136, 21, 175, 0.65),
     rgba(100, 16, 211, 0.65)
   );
+
   /* font-size: 64px;
 	font-weight: 600; */
 }
+
 div > #heading1 {
   font-size: 64px;
 }
@@ -148,19 +156,19 @@ li {
   width: 36px;
   opacity: 0;
 }
-.preloader {
+div > .preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background-color: #1a1717;
-  z-index: 9999;
+  z-index: 1000;
   display: grid;
   place-items: center;
   place-content: center;
   position: absolute;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .preloader-progress {
