@@ -8,7 +8,15 @@ function loadPage(page) {
     container.find(".loader").remove();
   });
 
-  img.attr("src", "../assets/pages/" + (page - 2) + ".jpg");
+  var fileExt = ".jpg"; // Default file extension set to .jpg
+  img.attr("src", "../assets/pages/" + (page - 2) + fileExt); // Load .jpg file
+
+  // Try loading .gif file, if .jpg file fails to load
+  img.error(function () {
+    var gifLoop = img.attr("loop", "true");
+    fileExt = ".gif"; // Change file extension to .gif
+    img.attr("src", "../assets/pages/" + (page - 2) + fileExt, gifLoop); // Load .gif file
+  });
 }
 
 function addPage(page, book) {
