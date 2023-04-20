@@ -13,9 +13,8 @@ function loadPage(page) {
 
   // Try loading .gif file, if .jpg file fails to load
   img.error(function () {
-    var gifLoop = img.attr("loop", "true");
     fileExt = ".gif"; // Change file extension to .gif
-    img.attr("src", "../assets/pages/" + (page - 2) + fileExt, gifLoop); // Load .gif file
+    img.attr("src", "../assets/pages/" + (page - 2) + fileExt); // Load .gif file
   });
 }
 
